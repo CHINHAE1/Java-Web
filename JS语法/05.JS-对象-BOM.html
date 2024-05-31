@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 获取
+    window.alert("Hello BOM"); // 弹出提示框
+    alert("Hello BOM"); // 弹出提示框
+
+    // 方法
+    // confirm() 弹出确认框
+    var result = confirm("你确定要删除吗?"); // 返回true或false
+    alert(result); // 弹出确认框的结果
+
+    // 定时器 - setInteval() 周期性的执行某一个函数
+    var i = 0;
+    setInterval(function(){
+        i++;
+        alert("定时器执行了第" + i);
+    }, 1000); // 每隔1秒执行一次
+
+    // 计时器 - setTimeout() 在指定的时间后执行某一个函数
+    setTimeout(function(){
+        alert("计时器执行了");
+    }, 5000); // 5秒后执行
+
+    //  地址栏对象 - location
+    // 获取当前页面的URL
+    var url = location.href;
+    alert(url); // 输出当前页面的URL
+
+    // 跳转到新的页面
+    location.href = "https://www.baidu.com"; // 跳转到百度页面
+
+    // 历史记录对象 - history
+    // 记录浏览过的页面
+    history.back(); // 后退
+    history.forward(); // 前进
+    history.go(-1); // 后退
+    history.go(1); // 前进
+
+
+
+</script>
+</html>

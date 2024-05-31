@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 创建自定义对象
+    var user = {
+        name: "Tom",
+        age: 25,
+        gender: "male",
+        /* 
+        eat : function(){
+            alert("吃饭~");
+        } 
+        */
+        // 简写方式
+        eat() {
+            alert("吃饭~");
+        }
+    }
+
+    alert(user.name); // Tom
+    alert(user.age); // 25
+    alert(user.gender); // male
+    user.eat(); // 吃饭~
+
+    // 定义json
+    var jsonStr = '{"name" : "Tom", "age" : 25, "gender" : "male"}';
+    alert(jsonStr); // {"name" : "Tom", "age" : 25, "gender" : "male"}
+
+    // 将json字符串转换为对象
+    var obj = JSON.parse(jsonStr);
+    alert(obj.name); // Tom
+    alert(obj.age); // 25
+    alert(obj.gender); // male
+
+    // 将对象转换为json字符串
+    var jsonStr2 = JSON.stringify(obj);
+    alert(jsonStr2); // {"name":"Tom","age":25,"gender":"male"}
+</script>
+
+</html>

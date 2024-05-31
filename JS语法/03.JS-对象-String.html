@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 创建字符串对象
+    var str = new String("Hello String!");
+    var str1 = "Hello String!";
+    console.log(str1);
+
+    // 访问字符串的长度 length
+    console.log(str.length);
+
+    // 访问字符串的某个字符 charAt
+    console.log(str.charAt(0));
+
+    // 字符串的拼接 concat
+    var str2 = " World!";
+    var str3 = str1.concat(str2);
+    console.log(str3);
+
+    // 字符串的比较 localeCompare
+    console.log(str1.localeCompare(str2));
+
+    // 字符串的查找 indexOf
+    console.log(str1.indexOf("l"));
+
+    // 字符串的替换 replace
+    console.log(str1.replace("l", "L"));
+
+    // 字符串的分隔字母 trim
+    console.log(str1.trim());
+
+    // substring(start, end) 方法 开始索引 -> 结束索引-1
+    console.log(str1.substring(2, 5));
+</script>
+</html>
