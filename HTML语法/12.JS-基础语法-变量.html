@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    var a = 10; // 变量声明
+    console.log(a); // 输出变量值
+
+    var a = "hello";
+
+    console.log(a); // 输出变量值
+
+    // 特点1 : 作用域比较大,全局变量
+    {
+        var b = 20;
+        alert(b); // 输出20
+    }
+    alert(b); // 输出20
+
+    // 特点2 : 可以重复定义
+
+    var c = 30;
+    var c = 40;
+    alert(c); // 输出40
+
+
+
+    // let 声明块级作用域的变量
+    {
+        let d = 50;
+        alert(d); // 输出50
+    }
+    alert(d); // 报错,变量d已经不在作用域内了
+
+
+    // const 声明常量,不能修改
+    {
+        const e = 60;
+        console.log(e); // 输出60
+        // e = 70; // 报错,常量不能修改
+    }
+    alert(e); // 报错,常量e已经不在作用域内了
+
+
+
+</script>
+
+</html>
